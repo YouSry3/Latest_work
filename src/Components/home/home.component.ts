@@ -9,18 +9,29 @@ import { SKilsComponent } from '../skils/skils.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  DetermineToLink(params: string, url: string) {
-    switch (params) {
-      case "linkedin":
-      case "github":
-      case "facebook":
-      case "youtube":
-        window.open(url, '_blank');
-        break;
-      default:
-        window.open(url, '_blank');
-        break;
-    }
-  }
+        DetermineToLink(params: string, url: string) {
+          switch (params) {
+            case "linkedin":
+            case "github":
+            case "facebook":
+            case "youtube":
+              window.open(url, '_blank');
+              break;
+            default:
+              window.open(url, '_blank');
+              break;
+          }
+        }
+
+
+        downloadFile(url: string, fileName: string) {
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', fileName); // Set custom file name
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+
 
 }

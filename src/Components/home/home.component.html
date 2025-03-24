@@ -76,11 +76,15 @@
 
 
           </div>
-          <a href="https://drive.google.com/uc?export=download&id=1NiVPNNNADop9dGrWP2WgevD9S7z1AI-H"
-          download="MohamedSherif.pdf"
-          class="mt-12 text-center  justify-center m-auto lg:w-56 sm:w-32 animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-medium bg-indigo-900  px-4 py-2 rounded-lg tracking-wide text-white">
-           <span class="ml-2">Download CV❤️</span>
-       </a>
+
+
+          <button
+          (click)="downloadFile('https://drive.google.com/uc?export=download&id=1NiVPNNNADop9dGrWP2WgevD9S7z1AI-H', 'MohamedSherif.pdf')"
+          class="mt-12 text-center text-lg   justify-center m-auto lg:w-56 sm:w-32 animate-bounce focus:animate-none hover:animate-none inline-flex text-md font-bold bg-indigo-900  px-4 py-2 rounded-lg tracking-wide text-white">
+
+            Download CV ❤️
+          </button>
+
 
           <app-skils></app-skils>
       </div>
