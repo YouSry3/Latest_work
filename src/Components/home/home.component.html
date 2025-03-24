@@ -22,7 +22,7 @@
           <div
             id="SocialLinks"
               class="px-2 mt-10 flex rounded-sm bg-gray-200 text-gray-500 dark:bg-gray-700 dark:bg-opacity-30 dark:text-gray-700 hover:px-8 backdrop-blur-xl ">
-              <a href="https://www.linkedin.com/in/mohammed-sherif-177863268/">
+              <button  (click)="DetermineToLink('linkedin','https://www.linkedin.com/in/mohammed-sherif-177863268/')" >
                   <div data-title="LinkedIn" class="p-2 hover:text-primary hover:text-blue-500">
                       <svg class="w-8 h-8 text-gray-800 dark:text-white hover:text-blue-500" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -34,8 +34,8 @@
                       </svg>
 
                   </div>
-              </a>
-              <a href="https://github.com/mohamedsherif301/">
+              </button>
+              <button (click)="DetermineToLink('github','https://github.com/mohamedsherif301/')">
                   <div data-title="Gitgup" class="p-2 hover:text-primary hover:dark:text-primary">
 
                       <svg class="w-8 h-8 text-gray-800 dark:text-white hover:text-black" aria-hidden="true"
@@ -48,9 +48,9 @@
 
 
                   </div>
-              </a>
+              </button>
 
-              <a href="https://www.facebook.com/profile.php?id=100053775250318">
+              <button (click)="DetermineToLink('facebook','https://www.facebook.com/profile.php?id=100053775250318')">
                   <div data-title="Facebook" class="p-2 hover:text-blue-500 hover:dark:text-blue-500">
                       <svg class="w-8 h-8 text-gray-800 dark:text-white hover:text-blue-700" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -61,8 +61,8 @@
                       </svg>
 
                   </div>
-              </a>
-              <a href="https://www.youtube.com/@MElSherif-g6p">
+              </button>
+              <button (click)="DetermineToLink('youtube','https://www.youtube.com/@MElSherif-g6p')">
                   <div data-title="Youtube" class="p-2 hover:text-primary hover:dark:text-primary">
                       <svg class="w-8 h-8 text-gray-800 dark:text-white hover:text-red-600" aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -72,7 +72,7 @@
                               clip-rule="evenodd" />
                       </svg>
                   </div>
-              </a>
+              </button>
 
 
           </div>
