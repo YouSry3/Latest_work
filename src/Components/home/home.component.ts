@@ -24,14 +24,21 @@ export class HomeComponent {
         }
 
 
-        downloadFile(url: string, fileName: string) {
-          const link = document.createElement('a');
-          link.href = url;
-          link.setAttribute('download', fileName); // Set custom file name
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        }
+         downloadFile(url:string, fileName:string) {
+          // Open the file in a new tab
+
+
+          // Wait a bit before triggering the download
+
+              const link = document.createElement('a');
+              link.href = url;
+              link.setAttribute('download', fileName); // Set custom file name
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+        
+      }
+
 
 
 }
